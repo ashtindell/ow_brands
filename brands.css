@@ -1,0 +1,61 @@
+div#filters {
+  text-align: center;
+  padding: 10px;
+  font-size: 17px;
+}
+
+div#filters h4 {
+  color: #99999B;
+}
+
+div#filters a {
+  color: #77777B;
+  cursor: pointer;
+}
+
+div#filters a:hover {
+  text-decoration: none;
+  color: #99999B;
+}
+
+.brands-list {
+  width: 100%;
+}
+
+.brands-list img {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.brand-item {
+  position: relative;
+  float: left;
+  min-height: 1px;
+  text-align: center;
+}
+
+@media (min-width: 960px) {
+  .brand-columns {
+    width: 20%;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 959px) {
+  .brand-columns {
+    width: 25%;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 719px) {
+  .brand-columns {
+    width: 33.33333334%;
+  }
+}
+
+@media (max-width: 479px) {
+  .brand-columns {
+    width: 50%;
+  }
+}
