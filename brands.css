@@ -11,6 +11,7 @@ div#filters h4 {
 div#filters a {
   color: #77777B;
   cursor: pointer;
+  font-size: 16px;
 }
 
 div#filters a:hover {
