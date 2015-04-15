@@ -103,3 +103,30 @@
   <a class="brand-columns brand-item" title="Wm. Lamb &amp; Son" href="/brands/wm-lamb-son" target="_self"><img src="{{media url="wysiwyg/brands/wm-lamb-and-sons.png"}}" /></a>
 
 </div>
+
+<script type="text/javascript">
+
+  jQuery( window ).load(function() {
+
+      jQuery( '.brands-list' ).isotope({
+        // options...
+        itemSelector: '.brand-item',
+        getSortData: {
+          title: '[title]'
+        }
+      });
+
+
+      jQuery( '#filters' ).on( 'click', 'a', function() {
+        var filterValue = jQuery( this ).attr('data-filter');
+        jQuery( '.brands-list' ).isotope({ filter: filterValue });
+      });
+
+      jQuery( '#filters' ).on( 'click', 'a', function() {
+        var sortByValue = jQuery( this ).attr('data-sort-by');
+        jQuery( '.brands-list' ).isotope({ sortBy: sortByValue });
+      });
+
+});
+
+</script>
